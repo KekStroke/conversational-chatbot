@@ -1,13 +1,52 @@
 version: "3.1"
 
 rules:
+    - rule: Greet Rule
+      steps:
+          - intent: greet
+          - action: utter_greeting
 
-- rule: Say goodbye anytime the user says goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
+    - rule: Goodbye Rule
+      steps:
+          - intent: goodbye
+          - action: utter_goodbye
 
-- rule: Say 'I am a bot' anytime the user challenges
-  steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+    - rule: Affirmation Rule
+      steps:
+          - intent: affirm
+          - action: utter_acknowledge
+
+    - rule: Contact Human Rule
+      steps:
+          - intent: contact_human
+          - action: utter_provide_contact_info
+
+    - rule: Beginner Equipment Rule
+      steps:
+          - intent: beginner_equipment
+          - action: utter_provide_beginner_equipment_info
+
+    - rule: Join Advanced Group Rule
+      steps:
+          - intent: join_advanced_group
+          - action: utter_provide_advanced_group_info
+
+    - rule: Choose Group Rule
+      steps:
+          - intent: choose_group
+          - action: utter_guide_choose_group
+
+    - rule: Join Club Rule
+      steps:
+          - intent: join_club
+          - action: utter_provide_join_club_info
+
+    - rule: Club Activities Rule
+      steps:
+          - intent: club_activities
+          - action: utter_list_club_activities
+
+    - rule: Bot Challenge Rule
+      steps:
+          - intent: bot_challenge
+          - action: utter_bot_challenge_response

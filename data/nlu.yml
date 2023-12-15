@@ -1,87 +1,77 @@
 version: "3.1"
 
 nlu:
-- intent: greet
+- intent: club_activities
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - What events does the table tennis club organize?
+    - Tell me about the club's activities.
+    - Any upcoming table tennis tournaments?
+    - What's on the agenda for the table tennis club?
+    - Can you brief me on the club's events?
+    - What events does the club organize throughout the year?
+    - What kind of things does the table tennis club do?
+    - I'm new here. What can I expect from the university table tennis club?
+    - Tell me about the events organized by the table tennis club.
 
-- intent: goodbye
+- intent: join_club
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - How can I join the table tennis club?
+    - What's the process for becoming a club member?
+    - Tell me how to get involved in the table tennis club.
+    - Any requirements for joining the club?
+    - Explain the steps to become a member of the table tennis club.
+    - What do I need to do to become part of the table tennis team?
+    - Tell me the steps to join the club.
 
-- intent: affirm
+- intent: choose_group
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - How do I decide between the advanced and beginners groups?
+    - Which group is suitable for me, advanced or beginners?
+    - Can you help me choose between the advanced and beginners groups?
+    - What's the difference between the advanced and beginners teams?
+    - How can I determine the right group for my skill level?
+    - Which group is for beginners?
+    - How do I pick between advanced and beginners?
+    - Tell me about the different skill levels.
+    - What's the deal with the two groups?
+    - Help me decide: advanced or beginners?
 
-- intent: deny
+- intent: join_advanced_group
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - How can I join the advanced table tennis group?
+    - Tell me about joining the advanced team.
+    - What's the process for getting into the advanced group?
+    - Can I directly join the advanced level, and if so, how?
+    - Guide me on becoming a part of the advanced table tennis team.
+    - How do I join the advanced group?
+    - How do I attend advanced trainings?
+    - What's the deal with joining advanced trainings?
+    - Can I go straight to the advanced team?
+    - Tell me how to get into advanced trainings.
+    - Guide me on joining advanced trainings, please.
 
-- intent: mood_great
+- intent: beginner_equipment
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - What equipment do I need as a beginner in table tennis?
+    - Tell me about the basic gear for beginners.
+    - What's the required inventory for someone starting with table tennis?
+    - Can you list the essential equipment for beginners?
+    - What do I need in terms of rackets, balls, etc., as a beginner?
+    - What stuff do I need to start table tennis?
+    - Tell me the basics for a beginner's kit.
+    - What gear is a must for someone new to table tennis?
+    - List the essentials for beginners, please.
+    - What do I require as a beginner. Rackets, balls, anything else?
+    - Do I need to buy anything to attend trainings?
 
-- intent: mood_unhappy
+- intent: contact_human
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - How can I talk to someone from the club?
+    - How can I talk to the club leader?
+    - Provide me with contact information.
+    - Is there a way to reach out to a person for questions?
+    - I want to speak with real human. How do I do that?
+    - Can I get contact details for further assistance?
 
 - intent: bot_challenge
   examples: |
@@ -89,3 +79,35 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: greet
+  examples: |
+    - Hi there!
+    - Hello!
+    - Hey!
+    - Greetings!
+    - Good to see you!
+
+- intent: goodbye
+  examples: |
+    - Goodbye!
+    - Bye!
+    - See you later!
+    - Farewell!
+    - Take care!
+
+- intent: affirm
+  examples: |
+    - Yes, that sounds good.
+    - I agree.
+    - Thank you!
+    - Thanks!
+    - Appreciate it!
+    - Sure, I'm on board.
+    - Yep, got it.
+    - Absolutely!
+    - Thanks a bunch!
+    - Perfect!
+    - I agree with that.
+    - Great, thanks!
+    - That helps, thanks!

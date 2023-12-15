@@ -1,34 +1,48 @@
 version: "3.1"
 
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+    - greet
+    - goodbye
+    - affirm
+    - contact_human
+    - beginner_equipment
+    - join_advanced_group
+    - choose_group
+    - join_club
+    - club_activities
+    - bot_challenge
 
 responses:
-  utter_greet:
-  - text: "Hey! How are you?"
+    utter_greeting:
+        - text: "Hey there! Welcome to the InnoTableTennis club. How can I assist you today?"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+    utter_goodbye:
+        - text: "Goodbye! If you have more questions, feel free to return anytime."
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+    utter_acknowledge:
+        - text: "Got it! If you need further clarification, just let me know."
 
-  utter_happy:
-  - text: "Great, carry on!"
+    utter_provide_contact_info:
+        - text: "Sure, you can reach out to us at our [club chat](https://t.me/+pSAqcDY6eqM5Mjg6). We're here to help!"
 
-  utter_goodbye:
-  - text: "Bye"
+    utter_provide_beginner_equipment_info:
+        - text: "For beginners, you'll need a good table tennis racket and comfortable sportswear. If you don't have racket you can always take the club's one during training from the coach. Anything specific you'd like to know about the equipment?"
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+    utter_provide_advanced_group_info:
+        - text: "To join the advanced group, demonstrate your skills at our next assessment session. Keep an eye on our announcements for details."
+
+    utter_guide_choose_group:
+        - text: "Choosing a group depends on your skill level. Beginners start with the basics, while the advanced group is for more experienced players. Where do you see yourself?"
+
+    utter_provide_join_club_info:
+        - text: "To join the club, attend one of our meetings or drop by during training hours (don't forget to register on the sport platform). We'll get you set up and introduce you to the fantastic world of table tennis."
+
+    utter_list_club_activities:
+        - text: "We have regular tournaments, training sessions, and social events. Stay tuned for announcements on our upcoming activities in our club chat. It's a great way to get involved!"
+
+    utter_bot_challenge_response:
+        - text: "Nice try! I'm just a friendly bot here to help with club-related info. If you have any questions, feel free to ask!"
 
 session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+    session_expiration_time: 60
+    carry_over_slots_to_new_session: true
