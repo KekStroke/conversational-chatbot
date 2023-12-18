@@ -50,3 +50,8 @@ rules:
       steps:
           - intent: bot_challenge
           - action: utter_bot_challenge_response
+
+    - rule: Feedback Rule
+      steps:
+        - intent: user_feedback
+        - action: action_collect_feedback

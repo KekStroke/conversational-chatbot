@@ -43,6 +43,9 @@ responses:
     utter_bot_challenge_response:
         - text: "Nice try! I'm just a friendly bot here to help with club-related info. If you have any questions, feel free to ask!"
 
+actions:
+    - action_collect_feedback
+
 session_config:
     session_expiration_time: 60
     carry_over_slots_to_new_session: true

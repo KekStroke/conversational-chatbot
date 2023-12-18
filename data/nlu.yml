@@ -111,3 +111,21 @@ nlu:
     - I agree with that.
     - Great, thanks!
     - That helps, thanks!
+
+- intent: user_feedback
+  examples: |
+    - That was great!
+    - I'm satisfied with the assistance.
+    - Good job!
+    - Not helpful at all.
+    - I'm frustrated with the bot.
+    - This is confusing.
+    - Okay.
+    - It's fine.
+    - I have no particular feedback.
+    - The information provided was inaccurate.
+    - I didn't get the help I needed.
+    - The response was too slow.
+    - Add more details about advanced groups.
+    - Can you improve the greeting message?
+    - I suggest adding a feature to join clubs directly.
